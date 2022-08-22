@@ -6,6 +6,7 @@ public class Mate {
     private int b;
     private int c;
 
+
     public int getA(){return a;}
     public void setA(){this.a = a;}
 
@@ -27,9 +28,28 @@ public class Mate {
         }
     }
 
-    public void menosBMasmenos(){
+    public void bAlCuadradoMenosCuatroPorAPorC(int bAlCuadrado2, int determinante){
         if(true){
-            this.b + 
+            bAlCuadrado2 = this.b * this.b;
+            determinante = bAlCuadrado2 - 4 * this.a * this.c;
+        }
+    }
+
+    public void menosBMas(int arriba){
+        if(true){
+            arriba = this.b + Math.sqrt(determinante);
+        }
+    }
+    
+    public void menosBMenos(int arriba){
+        if(true){
+            arriba = this.b - Math.sqrt(determinante);
+        }
+    }
+
+    public void div2PorA(int resultado){
+        if(true){
+            resultado = arriba / 2*this.a;
         }
     }
 }
